@@ -12,7 +12,8 @@ def check_palindrome():
         else:
             print("Given string '{}' is NOT a palindrome".format(input_element))
 
-    except:
-        print("Invalid input")
+    except Exception as e:
+        print("Invalid input", e)
+
 
 check_palindrome()
